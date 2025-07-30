@@ -68,17 +68,13 @@
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
     }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
-    }
+    .projects .card h3 {
+  font-weight: bold;
+}
+
+.projects .card p {
+  font-weight: normal;
+}
     footer {
       text-align: center;
       background: linear-gradient(to right, #ffdde1, #ee9ca7);
@@ -218,7 +214,6 @@
   transform: scale(1.05);
 }
 </style>
-
 
 
   <section id="projects">
