@@ -98,6 +98,35 @@
     a:hover {
       text-decoration: underline;
     }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 1rem;
+      background: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    button[type="submit"] {
+      background: #ff6b81;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button[type="submit"]:hover {
+      background: #e85c72;
+    }
   </style>
 </head>
 <body>
@@ -121,12 +150,17 @@
   <section id="skills">
     <h2 class="section-title">Skills</h2>
     <div class="skills">
-      <div class="card">C, C++</div>
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript (Basic)</div>
       <div class="card">Java</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">Streamlit</div>
+      <div class="card">OpenAI API</div>
       <div class="card">DBMS (Basic)</div>
       <div class="card">OOP Concepts</div>
+      <div class="card">GUI (Java Swing)</div>
+      <div class="card">VS Code</div>
       <div class="card">Problem Solving</div>
-      <div class="card">VS Code & Code Editors</div>
     </div>
   </section>
 
@@ -154,9 +188,18 @@
 
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <p>📞 80056-97156</p>
-    <p>📧 palaksharma121106@mail.com</p>
-    <p>🔗 <a href="https://linkedin.com/in/palak-n-sharma" target="_blank">LinkedIn</a></p>
+    <form action="https://formspree.io/f/mrbllzvj" method="POST">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
     <p class="quote">Let’s create something beautiful together 🌸</p>
   </section>
 
